@@ -5,3 +5,7 @@ console.log("Hello, World!")
 
         console.log(name)
         console.log(surname)
+
+        const name2 = "Steph"
+
+        console.log(name2)
