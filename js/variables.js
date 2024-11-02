@@ -1,10 +1,13 @@
 console.log("Hello, World!")
         const name2 = "Steph"
+        const max = 57
+        const actual = max-13
+        const percentage = actual/max
+        
         let name = "John"
         let surname = "Doe"
         let a = 10
-        let b = 7 * a
-        
+        let b = 7 * max
 
         console.log(name)
         console.log(surname)
@@ -14,4 +17,5 @@ console.log("Hello, World!")
         
         console.log(9*a)
         console.log(b)
+       //alert("The result is "+percentage)
        
