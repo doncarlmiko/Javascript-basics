@@ -7,7 +7,7 @@ console.log("Hello, World!")
         let name = "John"
         let surname = "Doe"
         let a = 10
-        let b = 7 * max
+        let b = 7 * a
 
         console.log(name)
         console.log(surname)
