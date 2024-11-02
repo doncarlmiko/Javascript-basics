@@ -19,3 +19,21 @@ console.log("Hello, World!")
         console.log(b)
        //alert("The result is "+percentage)
        
+      
+      
+      /*--------charAt()------*/
+       let char = name.charAt(2)
+        console.log(char)
+
+        /*--------String length-----*/
+        let length = name.length
+       alert(`This is the length of string ${length}`)
+
+        /*----charCodeAt()---*/
+
+        let text = "HELLO WORLD";
+        let charCodeVariable = text.charCodeAt(2);
+        console.log(charCodeVariable)
+
+        const nameWebsite = "W3Schools";
+        let letter = nameWebsite[2];
