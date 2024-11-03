@@ -71,6 +71,16 @@ console.log("Hello, World!")
         console.log(text3)
 
         /*--trim()--*/
-        let textToTrim = "      Hello World!      ";
+        let textToTrim = "      Trim text      ";
         let trimText = textToTrim.trim();
+        console.log(`Using trim method: ${trimText}`)
 
+        /* trimStart()--*/
+        let textToTrimStart = "     Trim Start!     ";
+        let trimTextStart = textToTrimStart.trimStart();
+        console.log(`Using trim start: ${trimTextStart}`)
+
+         /* trimEnd()--*/
+         let textToTrimEnd = "             Trim End!     ";
+         let trimTextEnd = textToTrimStart.trimEnd();
+         console.log(`Using trim end: ${trimTextEnd}`)
