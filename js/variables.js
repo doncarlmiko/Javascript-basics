@@ -70,4 +70,7 @@ console.log("Hello, World!")
         let text3 = text1.concat(" ", text2)
         console.log(text3)
 
-        
+        /*--trim()--*/
+        let textToTrim = "      Hello World!      ";
+        let trimText = textToTrim.trim();
+
