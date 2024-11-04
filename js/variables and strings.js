@@ -131,3 +131,46 @@ console.log("Hello, World!");
           let secondText = "Please visit Microsoft!";
           let newText2 = secondText.replace(/MICROSOFT/i, "W3Schools");
           console.log(`This is string replace: ${newText}`);
+
+        /*
+        Note
+        Regular expressions are written without quotes.
+        To replace all matches, 
+        use a regular expression with a /g flag (global match):
+        */
+        let thirdText = "Please visit Microsoft and Microsoft!";
+        let newText3 = thirdText.replace(/Microsoft/g, "W3Schools");
+        console.log(`This is third replace text: ${newText3}`);
+
+        /*String ReplaceAll()*/
+        let oneSentence = "I love cats. Cats are very easy to love. Cats are very popular. Cats is king!"
+        oneSentence = oneSentence.replaceAll("Cats","Dogs");
+        oneSentence = oneSentence.replaceAll("cats","dogs");
+        console.log(`This is replaceall(): ${oneSentence}`);
+
+        /*---String split() 
+        - A string can be converted to an array with the split() method:
+
+        <!DOCTYPE html>
+        <html>
+        <body>
+
+        <h1>JavaScript String Methods</h1>
+        <h2>The split().Method</h2>
+
+        <p id="demo"></p>
+
+        <script>
+        let text = "Hello";
+        const myArr = text.split("");
+
+        text = "";
+        for (let i = 0; i < myArr.length; i++) {
+        text += myArr[i] + "<br>"
+        }
+        document.getElementById("demo").innerHTML = text;
+        </script>
+
+        </body>
+        </html>
+        */
