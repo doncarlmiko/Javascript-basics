@@ -84,3 +84,45 @@ console.log("Hello, World!")
          let textToTrimEnd = "             Trim End!     ";
          let trimTextEnd = textToTrimStart.trimEnd();
          console.log(`Using trim end: ${trimTextEnd}`)
+
+        /*---PadStart---*/
+        let textPadStart = "5";
+        let padded = textPadStart.padStart(4,"x");
+        console.log(`This is padStart: ${padded}`)
+
+        /*Note The padStart() method is a string method. 
+        To pad a number, convert the number to a string first.
+        See the example below.*/
+        let numb = 5;
+        let numbConvertText = numb.toString();
+        let numPadded = numbConvertText.padStart(4,"0")
+        console.log(`This is PadStart: ${numPadded}`)
+
+        /*-- PadEnd --*/
+        let textPadEnd = "5";
+        let textPaddedEnd= textPadEnd.padEnd(4,"x")
+        console.log(`This is PadEnd ${textPaddedEnd}`)
+
+        let numbPadEnd = 5;
+        let converToText = numbPadEnd.toString();
+        let numPaddedEnd = converToText.padEnd(4,"0");
+        console.log(`This is numPadEnd: ${numPaddedEnd}`)
+
+        /*-- String repeat()--*/
+        let stringText = "Hello world!";
+        let repeatResult = stringText.repeat(4);
+        console.log(`This is string repeat: ${repeatResult} `)
+
+        /*--String replace() method --
+        Note:
+        The replace() method does not change the string it is called on.
+        The replace() method returns a new string.   
+        The replace() method replaces only the first match
+        If you want to replace all matches, 
+        use a regular expression with the /g flag set. 
+        See examples below.
+        */
+        let firstText = "Please visit Microsoft and Microsoft!"
+        let newText = firstText.replace("Microsoft", "W3Schools")
+        console.log(`This is string replace: ${newText}`)
+        
