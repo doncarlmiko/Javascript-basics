@@ -27,16 +27,30 @@
   </body>
   <script>
     const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
+    const colors=['Blue','Red','Green','Yellow'] ;
     const para = document.createElement('p');
     const extra = 1;
     // Add your code here
-    function chooseName(nameValue){
-      return para.textContent = `Random names: ${names[Math.floor(Math.random() * names.length)]}`;
+    function chooseName(nameArray){
+      const randomIndex = randomNumber(1, nameArray.length);
+      return para.textContent = `Random names: ${nameArray[randomIndex]}`;
+    }
+
+    function randomNumber(min, max){  
+      return Math.floor(Math.random() * (max - min) ) + min;
     }
     // Don't edit the code below here!
-
+    //
     const section = document.querySelector('section');
-    chooseName();
+
+    if(para != names){
+      chooseName(names);
+    }
+    else{
+      chooseName(colors);
+    }
+    
+    
     section.appendChild(para);
   </script>
 

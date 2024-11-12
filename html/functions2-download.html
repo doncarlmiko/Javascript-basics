@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Functions: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+    </section>
+
+    <canvas class="canva1" width="480" height="320"> 
+
+    </canvas>
+
+    <canvas class="canva1" width="480" height="320"> 
+
+    </canvas>
+
+  </body>
+  <script>
+    const canvas = document.querySelectorAll('.canva1');
+   // const ctx = canvas.getContext('2d');
+ console.log(canvas);
+    const x = 50;
+    const y = 60;
+    const width = 1000;
+    const height = 75;
+    const color = 'blue';
+
+    // Add your code here
+    function Rectangle(ctx){
+      ctx.fillStyle = color;
+      ctx.fillRect(x, y, width, height);
+    }
+    // Don't edit the code below here!
+   canvas.forEach((canvas) => {
+    const ctxarr = canvas.getContext('2d');
+    Rectangle(ctxarr);
+    });
+
+    const section = document.querySelector('section');
+  </script>
+
+</html>
