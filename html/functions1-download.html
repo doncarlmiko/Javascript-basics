@@ -29,9 +29,9 @@
     const para = document.createElement('p');
     const extra = 1;
     // Add your code here
-    function chooseName(nameArray){
+    const chooseName = (nameArray)=>{
       const randomIndex = randomNumber(1, nameArray.length);
-      return para.textContent = `Random names: ${nameArray[randomIndex]}`;
+      para.textContent = `Random names: ${nameArray[randomIndex]}`;
     }
 
     function randomNumber(min, max){  
@@ -47,8 +47,6 @@
     else{
       chooseName(names);
     }
-
-   
 
 
     section.appendChild(para);
