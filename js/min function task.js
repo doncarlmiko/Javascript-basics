@@ -27,8 +27,8 @@ const calcMinAndMax =(inputbox1,inputbox2,outputBox1,outputBox2) =>{
     //output3.textContent = `Maximum number is ${passMax}`;
 
     if(passMin == input1 && passMax == input2){
-        outputBox1.textContent =`Minimum number ${passMin}`;
-        outputBox2.textContent = `Maximum number ${passMax}`;
+        outputBox1.textContent =`Minimum number`;
+        outputBox2.textContent = `Maximum number`;
     }
     else {
         outputBox1.textContent = `Maximum number`;
