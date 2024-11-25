@@ -10,6 +10,7 @@ function calcIntegerExponent(integerInput,integerExponent){
     let i;
     for(i = 1 ; i < exponent; i++){
         result *=  result;
+        
     }
     return result;
 
