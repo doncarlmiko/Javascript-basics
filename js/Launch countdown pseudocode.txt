@@ -1,3 +1,22 @@
 In this exercise, 
 we want you to print out a simple launch countdown to the output box, from 10 down to Blastoff.
 
+create an html page and name it Launch countdown
+    create a <div class="output"> 
+
+
+create a Launch countdown.js
+    DECLARE output variable AS ELEMENT
+    SET output TO FIND ELEMENT BY CLASS "output"
+
+    DECLARE para variable AS ELEMENT
+    SET para TO CREATE a Paragraph ELEMENT 
+
+    create an integer variable i 
+
+    Loop i from 10 to 1
+    If i is 10, print para.textContent ="Countdown 10"
+    If i is 0, print para.textContent ="BLAST OFF!"
+    If i is BETWEEN 1 and 10, print para.textContent = i
+
+    append para to output
