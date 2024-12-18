@@ -1,0 +1,28 @@
+In this exercise, we want you to take a list of names stored in an array and put them into a guest list. 
+
+But it's not quite that easy 
+— we don't want to let Phil and Lola in because they are greedy and rude, and always eat all the food! We have two lists, one for guests to admit, and one for guests to refuse.
+
+create an html page and name it Guess lists
+    create a <div class="admitted"> 
+    create a <div class="refused"> 
+
+
+    create a guess list.js
+    DECLARE admitGuest variable AS ELEMENT
+    SET admitGuest TO FIND ELEMENT BY CLASS "admitted"
+
+    DECLARE refuseGuest variable AS ELEMENT
+    SET refuseGuest TO FIND ELEMENT BY CLASS "refused"
+
+    create an array variable people ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce']
+
+    create a variable person
+    print admitGuest = "Admit
+    print refuseGuest = 'Refuse:'
+
+    Loop people to person
+        if person === Phil OR person === Lola, print refuseGuest += person
+
+        else , print admitGuest +=person
+
