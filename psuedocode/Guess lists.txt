@@ -25,4 +25,3 @@ create an html page and name it Guess lists
         if person === Phil OR person === Lola, print refuseGuest += person
 
         else , print admitGuest +=person
-
