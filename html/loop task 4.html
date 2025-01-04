@@ -11,12 +11,16 @@
 
         while(isGreaterThan100){
             let userInput = prompt('Enter a number greater than 100','');
-            
-            if(userInput >100){
-                alert ('Greater than 100!');
-                isGreaterThan100 = false;
+
+            if(userInput === null){
+                alert ('Cancelled!');
+                break;
             }
-            else{
+            else if(userInput >100){
+                alert ('Greater than 100!');
+                break;
+            }
+            else if (userInput<=100){
                 alert ('Must be greater than 100!');
             }
         }
