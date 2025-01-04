@@ -7,7 +7,19 @@
 </head>
 <body>
     <script>
-        
+        let isGreaterThan100 = true;
+
+        while(isGreaterThan100){
+            let userInput = prompt('Enter a number greater than 100','');
+            
+            if(userInput >100){
+                alert ('Greater than 100!');
+                isGreaterThan100 = false;
+            }
+            else{
+                alert ('Must be greater than 100!');
+            }
+        }
     </script>
 </body>
 </html>
