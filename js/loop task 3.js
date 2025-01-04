@@ -10,6 +10,8 @@
         let isPrime = true;
 
         //inner loop to get the non-prime numbers
+        //Formula for getting prime numbers: 
+        // Divide the i variable from 2 up to it's square root.
         for(let sqrtLoop =2; sqrtLoop <=sqrtNumber; sqrtLoop++){
            if(i % sqrtLoop === 0){
               isPrime = false;
