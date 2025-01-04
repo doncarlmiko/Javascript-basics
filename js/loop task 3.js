@@ -2,22 +2,27 @@
  const para = document.createElement('p'); 
 
     function isPrime(num) {
-        let getPrime;
         let i;
-        
+        const primeNumbers = [];
 
       for(i = 2; i <= num; i++) {
-        //let numDivisors = num/i;
-       // const sqrtOfEach
-        //const PrimeNumbers = [];
         let sqrtNumber=Math.floor(Math.sqrt(i));
-        
+        let isPrime = true;
+
+        //inner loop to get the non-prime numbers
         for(let sqrtLoop =2; sqrtLoop <=sqrtNumber; sqrtLoop++){
-            if(i % sqrtLoop === 0){
-                console.log(i);
+           if(i % sqrtLoop === 0){
+              isPrime = false;
+              console.log(i);
+              break;
             }
         }
+          if (isPrime) {
+            primeNumbers.push(i);
+            
+        }
       }
+      return primeNumbers.join(", ");
     }
 
     // Add your code here
