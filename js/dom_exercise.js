@@ -20,3 +20,19 @@ paragraphSibling.textContent ="ME TOO!";
 container.appendChild(headerFirstchild);
 container.appendChild(paragraphSibling);
 
+function alertFunction(e) {
+    alert("YAY! YOU DID IT!");
+  }
+
+const btn = document.querySelectorAll("button");
+
+btn.forEach((button)=>{
+  
+  button.addEventListener("click", (e)=> {
+    e.target.style.background = "blue";
+  });
+});
+
+
+
+  
