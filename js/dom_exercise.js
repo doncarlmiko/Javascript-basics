@@ -30,7 +30,9 @@ btn.forEach((button)=>{
   
   button.addEventListener("click", (e)=> {
     e.target.style.background = "blue";
+    container.appendChild(paragraphSibling);
   });
+
 });
 
 
