@@ -3,7 +3,7 @@ const addItemButton = document.querySelector('button');
 const shoppingList = document.querySelector('ul');
 const deleteAllList = document.querySelector('#DeleteAll');
 
-//userInput.value;
+//Event handling for Adding items and deleting all lists.
 addItemButton.addEventListener('click',getUserInput);
 deleteAllList.addEventListener('click',deleteAllItems);
 
@@ -11,17 +11,21 @@ deleteAllList.addEventListener('click',deleteAllItems);
 function getUserInput(){
     const itemList = document.createElement('li');
     const listName = document.createElement('span');
+
+    //delete button for each item.
     const deleteList= document.createElement('button');
-    //const deleteAllList= document.createElement('button');
 
     if(userInput.value != ''){
+        
+        //gets the user input and put it on the list item.
         listName.textContent =userInput.value;
         deleteList.textContent='Delete';
         
-        deleteAllList.style.display='block';
         itemList.setAttribute("class", "highlight");
 
+        deleteAllList.style.display='block';
 
+        //append itemList, listName and deleteList to their respective parents.
         shoppingList.appendChild(itemList);
         itemList.appendChild(listName);
         itemList.appendChild(deleteList);
