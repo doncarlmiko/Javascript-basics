@@ -14,4 +14,4 @@ function multiplyNumeric(obj){
 
 console.log(multiplyNumeric(menu)); // call the function to multiply the numeric properties by 2
 
-console.log(menu.width); 
+console.log(menu); 
