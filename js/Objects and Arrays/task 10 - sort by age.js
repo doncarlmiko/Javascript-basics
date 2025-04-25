@@ -1,16 +1,18 @@
-let john = { name: "John", age: 25 };
-let pete = { name: "Pete", age: 30 };
-let mary = { name: "Mary", age: 28 };
-
-let arr = [ pete, john, mary ];
-
-sortByAge(arr);
+ let arr = [ { name: "John", age: 25 },
+    { name: "Pete", age: 30 },
+    { name: "Mary", age: 28 },
+    { name: "Don", age: 100 },
+    { name: "Anna", age: 22 },
+    { name: "Tom", age: 35 } ];
 
 function sortByAge(arr) {
-    arr.sort((a,b) => a.age > b.age ? 1: -1); // Step 1: Sort the array by age
+    // Step 1: Sort the array by age
+    arr.sort((a,b) => a.age > b.age ? 1: -1).forEach(element => { 
+        //Step 2: loop through the array to dynamically display the names based on their age
+       console.log(`Name: ${element.name}, Age: ${element.age}`);
+    });
+    return arr; // Step 3: Return the sorted array
 }
 
-// now: [john, mary, pete]
-console.log(arr[0].name); // John
-console.log(arr[1].name); // Mary
-console.log(arr[2].name); // Pete
+//Display the names and ages of the people in the array
+sortByAge(arr);
