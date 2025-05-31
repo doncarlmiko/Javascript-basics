@@ -16,4 +16,5 @@ let users = [
   
   let usersById = groupById(users);
 
-  console.log(usersById.john); // { john
+  console.log(usersById);
+  
